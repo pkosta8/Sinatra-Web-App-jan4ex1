@@ -15,7 +15,13 @@ get '/about_me' do
 end
 
 get '/favourites' do
-  @fav_links = ['terminator2', 'aliens', 'star wars', 'predator', 'rocky']
+  @fav_links = [
+    '<a href="http://www.imdb.com/title/tt0088247/">terminator2</a>',
+    '<a href="http://www.imdb.com/title/tt0090605/">aliens</a>',
+    '<a href="http://www.imdb.com/title/tt0076759/">star wars</a>',
+    '<a href="http://www.imdb.com/title/tt0093773/">predator</a>',
+    '<a href="http://www.imdb.com/title/tt0075148/">rocky</a>'
+  ]
     erb (:favourites)
 end
 
@@ -23,5 +29,4 @@ end
 
 get '/portfolio' do
   erb (:gallery)
-end
 end
