@@ -1,0 +1,31 @@
+<!--
+get '/favourites' do
+  @fav_links = ['terminator2', 'aliens', 'starwars', 'predator', 'rocky']
+    erb (:favourites)
+end -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>favourites links</title>
+</head>
+<body>
+
+  <h1>favourites links</h1>
+
+<ul>
+<% @fav_links.each do |fav_links| %>
+<li> <%= fav_links %> </li>
+<a href="http://www.imdb.com/title/tt0088247/">terminator2</a>
+<a href="http://www.imdb.com/title/tt0090605/">aliens</a>
+<a href="http://www.imdb.com/title/tt0076759/">star wars</a>
+<a href="http://www.imdb.com/title/tt0093773/">predator</a>
+<a href="http://www.imdb.com/title/tt0075148/">rocky</a>
+
+<% end %>
+</ul>
+
+<body>
+<html>
